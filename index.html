@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RideWave - Taxi Booking</title>
+    
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Basic styling for navigation */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 100px;
+            text-align: center;
+        }
+        
+        .navbar a {
+            float: right;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        /* Additional styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        
+.container {
+      border-radius: 5px;
+      padding: 2rem 1rem;
+      width: 45rem;
+      background: #F8F8FF;
+      text-align: center;
+      margin: 0 auto;
+      font-family: "Times New Roman", Times, serif;
+      font-size:33px;
+      box-shadow: 0 0 15px  rgba(0, 0, 0, 0.3);
+}
+
+.button1 {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button2 {
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+textarea {
+    
+    border-width: medium medium medium 1px;
+}
+
+input {
+    border-width: medium medium medium 1px;
+}
+
+select {
+    border-width: medium medium medium 1px;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="#policy">POLICY</a>
+        <a href="#commerce">COMMERCE</a>
+        <a href="#driver">DRIVER</a>
+        <a href="#ridesharing">RIDE SHARING</a>
+        <a href="#home">HOME</a>
+    </div>
+    <header>
+        <h1>RideWave</h1>
+        <p>- 24/7 Available -</p>
+    </header>
+    
+
+    <!-- introduction -->
+    <div class="content">
+        <h1 ><b>Welcome to RideWave </b></h1>
+        <p>Book your ride with ease and convenience!</p>
+        <h3>What does RideWave offers you?</h3>
+Next to you in 10-12 minutes!
+
+RideWave sends the nearest Vehicle to you after your call  directs it to you in 10-12 minutes.
+
+<h3>Reserve Door-to-Door Passenger Transportation!</h3>
+
+With RideWave, Our reservation service offers convenient door-to-door transportation for passengers with well maintained vehicle.</p>
+        <!-- Add more content here as needed -->
+    </div>
+    <!-- Form  -->
+ <div class="container">  
+    <h1 style="text-align: Center; font-size:50px""><b>Taxi Booking</b> </h1> 
+<hr>
+  <form action="mailto:ridewave000@gmail.com" method="post" enctype="text/plain" >
+    <label for="pickup_location">Pick-up Location:</label>
+    <select id="pickup_location" name="pickup_location" required>
+      <option value=""></option>
+      <option value="Location 1">Madhubani </option>
+      <option value="Location 2">Dharbhanga</option>
+      <option value="Location 3">Jaynagar</option>
+      <option value="Location 4">Rajnagar</option>
+      <option value="Location 5">Kaluwahi </option>
+      <option value="Location 6">Rahika </option>
+      <option value="Location 7">Benipatti</option>
+      <option value="Location 8">Loha/Kapsiya</option>
+    </select><br><br>
+<hr>
+    <label for="dropoff_location">Drop-off Location:</label>
+    <select id="dropoff_location" name="dropoff_location" required>
+      <option value=""></option>
+     <option value="Location 1">Madhubani </option>
+      <option value="Location 2">Dharbhanga</option>
+      <option value="Location 3">Jaynagar</option>
+      <option value="Location 4">Rajnagar</option>
+      <option value="Location 5">Kaluwahi </option>
+      <option value="Location 6">Rahika </option>
+      <option value="Location 7">Benipatti</option>
+      <option value="Location 8">Loha/Kapsiya</option>
+    </select><br><br>
+<hr>
+    <label for="pickup_date">Pickup Date and Time:</label>
+    <input type="datetime-local" id="pickup_date" name="pickup_date" value="<?php echo date('Y-m-d\TH:i'); ?>" required><br><br>
+<hr>         
+     <label for="vehicle Type">Vehicle Type:</label>
+    <select id="Vehicle Type" name="Vehicle Type" required>
+      <option value=""></option>
+      <option value="Location 1">E rickshaw</option>
+      <option value="Location 2">Auto</option>
+      <option value="Location 3">Standard car</option>
+      <option value="Location 3">Bus</option>
+      <option value="Location 3">Any Vehicle</option>
+      
+    </select><br><br>
+<hr>
+    <label for="reserve_vehicle">Do you need Door to door Service/ Reserve Vehicle ?:</label>
+    <select id="reserve_vehicle" name="reserve_vehicle" required>
+      <option value=""></option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br><br>
+<hr>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" required><br><br>
+<hr>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+<hr>
+    <label for="additional_info">Additional requests:</label><br>
+    <textarea id="additional_info" name="additional_info" rows="4" cols="25"></textarea><br><br>
+
+<hr> 
+    <input class="button2" type="reset" value="Reset">
+    
+    <input class="button1" type="submit" value="Submit">
+  </form>
+ </div>
+  
+  <!-- Navigation bar -->
+  <!-- Navigation bar -->
+  
+  <!-- Image of location/map -->
+
+ <img src="istockphoto-1294019348-612x612.jpg" class="w3-image w3-greyscale-min" style="width:100%;height:400px;">
+ 
+    <!-- Footer -->
+<h2 class="w3-wide w3-center">CONTACT</h2>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  
+        <i class="fa fa-envelope" style="width:30px"> </i> <a href="mailto:ridewave000@gmail.com">ridewave000@gmail.com</a><br>
+  <i class="fa fa-telegram w3-hover-opacity "></i>
+  <a href="https://t.me/SIKBOYS5" target="_blank" rel="noopener noreferrer">Feedback</a>
+    
+</body>
+</html>
